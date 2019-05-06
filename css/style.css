@@ -197,8 +197,8 @@ ul, li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: rap;
+  flex-wrap: rap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -450,7 +450,7 @@ ul, li {
     height: 200px;
   }
   #header .logo-title {
-    font-size: 56px;
+    font-size: 30px;
   }
   #header .logo-name {
     top: 0;
@@ -479,21 +479,21 @@ ul, li {
   .section .section-title {
     font-size: 36px;
   }
-  #latestworks .two-column-wrapper {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  .two-column-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: block;
   }
-  #latestworks .two-column-image {
-    width: 90%;
-    margin: 0 auto 20px;
+  #profile .two-column-image {
+    width: 70%;
+    margin: 0 auto 30px auto;
   }
-
-  #latestworks .two-column-desc {
+  #profile .two-column-desc {
     width: 100%;
   }
   #works .card {
-    width: 48%;
+    width: 100%;
   }
   #works .card-caption-title {
     font-size: 12px;
@@ -501,19 +501,6 @@ ul, li {
   #works .card-caption-info {
     font-size: 11px;
   }
-  #about .two-column-wrapper {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  #about .two-column-image {
-    width: 50%;
-    margin: 0 auto 20px;
-  }
-  #about .two-column-desc {
-   width: 100%;
- }
-
   #skill .card-wrapper {
     width: 100%;
   }
