@@ -1,23 +1,240 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>TipsNote : GitHub Pages Sample</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
-    <!-- BootstrapのCSS読み込み -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <main>
-      <h1>GitHub Pages のサンプルです</h1>
-      <a href="http://www.tam-tam.co.jp/tipsnote/"><button>TipsNote に戻る</button></a>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='ウガジタツヤのポートフォリオです。'>
+  <meta property='og:url' content='URL入る'>
+  <meta property='og:description' content='ウガジタツヤのポートフォリオです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="ウガジタツヤのポートフォリオです。" />
+  <title>Tatsuya Ugaji's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <img src="img/background.png" alt="">
+      <h1 class="logo">
+        <span class="logo-title">Tatsuya Ugaji's Portfolio</span>
+      </h1>
+    </header>
+    <nav id="gnav">
+      <ul>
+        <li><a href="#profile">PROFILE</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <main id="contents">
+      <section class="section" id="profile">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">PROFILE</h2>
+          </div>
+          <div class="two-column-wrapper">
+            <div class="two-column-image">
+              <img src="img/profile/profile.png" alt="">
+            </div>
+            <div class="two-column-desc">
+              <p class="text" style="text-indent:1em">
+                はじめまして。宇賀持 達哉（ウガジ タツヤ）と申します。
+                現在23歳で社会人歴は4年目です。</p>
+                <p class="text" style="text-indent:1em">
+                専門学校を卒業後に造船会社に入社し、製造現場のコスト管理を行なっていました。
+                エクセルを使用し仕事をすることが多かったため、VBAを独学。VBAにより業務効率化し、
+                それをきっかけにプログラミングに興味が湧きました。
+                「基本情報技術者」の資格取得後、「TechAcademy」にてWEBアプリ作成を学び
+                ベンチャーのITコンサルティング会社へエンジニアとして転職をしました。</p>
+                <p class="text" style="text-indent:1em">
+                現在はプロダクトの運用・保守を行なっています。
+                もっと開発ができる環境を求めて転職活動中です。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="skill">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">SKILL</h2>
+          </div>
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/Ruby.jpg" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">Ruby</h3>
+                <div class="rating">
+                  <p class="rate rate2"></p>
+                </div>
+                <p class="text">「if」や「each」等での基本的な構文を書くことができます。</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/Ruby_on_Rails.jpg" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">Ruby on Rails</h3>
+                <div class="rating">
+                  <p class="rate rate3"></p>
+                </div>
+                <p class="text">基本的な機能を備えたWEBアプリケーションを作成することができます。
+                詳細はWORKSをご覧ください。</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/HTMLCSS.png" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">HTML/CSS</h3>
+                <div class="rating">
+                  <p class="rate rate2"></p>
+                </div>
+                <p class="text">不明点を調べながらにはなりますが、コーディングができます。
+                まだまだスキル不足のため引き続き勉強中です。</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/Js.png" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">JavaScript</h3>
+                <div class="rating">
+                  <p class="rate rate1"></p>
+                </div>
+                <p class="text">現在progateにて勉強中です。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="works">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">WORKS</h2>
+            <div class="section-desc">
+              <p class="text">
+                これまでの制作実績です。</p>
+            </div>
+          </div>
+          <div class="card-wrapper my-gallery">
+            <figure class="card">
+              <a href="img/works/portfolio.png" data-size="980x668" class="card-image">
+          			<img src="img/works/portfolio.png" alt="" />
+          		</a>
+              <figcaption class="card-caption">
+                <a href="" target="blank"><p class="card-caption-title">Portfolio</p></a>
+                <p class="card-caption-info">Design</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <a href="img/works/original.png" data-size="980x668" class="card-image">
+                <img src="img/works/original.png" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <a href="https://utoriginalservice.herokuapp.com/" target="blank"><p class="card-caption-title">OriginalService</p></a>
+                <p class="card-caption-info">Design / Coding</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <a href="img/works/ShareBooks.png" data-size="980x668" class="card-image">
+                <img src="img/works/ShareBooks.png" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <a href="https://warm-hollows-77443.herokuapp.com/" target="blank"><p class="card-caption-title">ShareBooks</p></a>
+                <p class="card-caption-info">Design / Coding</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contact">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">CONTACT</h2>
+            <p class="section-desc">
+              お問合わせは下記のSNSからご連絡をください。
+            </p>
+          </div>
+          <div class="contact-wrapper">
+            <div class="contact-list">
+              <ul>
+                <li><a href="mailto:ugajitatsuya0820&#64;gmail.com" ><img src="img/contact/mail.png" alt=""><span class="contact-list-desc">メール</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-  </body>
+    <footer id="footer">
+      <div class="inner">
+        <nav class="footer-link">
+          <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">Copyright&copy;Tatsuya Ugaji.</p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
 </html>
