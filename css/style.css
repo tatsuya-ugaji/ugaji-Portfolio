@@ -260,6 +260,12 @@ ul, li {
   justify-content: space-between;
 }
 
+#works .card-wrapper p {
+  padding:0 10px;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
 /*--------------------------------
 　About
 ---------------------------------*/
