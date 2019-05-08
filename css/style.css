@@ -110,7 +110,8 @@ ul, li {
 
 #header .logo-desc {
   display: block;
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
   text-align: center;
   margin-top: 5px;
 }
